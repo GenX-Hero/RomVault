@@ -23,7 +23,8 @@
 - **Efficient Organization:** It helps parse, sort, and maintain structured lists and inventories of your local ROM collections with precision.
 
 ### Legal Disclaimer
-*RomVault is an independent management utility. This project does not provide, host, distribute, promote, or encourage the sharing of ROMs, BIOS files, or any other copyrighted material. Users are strictly responsible for complying with local copyright laws and ensuring they only manage lawfully backed-up data.*
+*RomVault is an independent utility designed to assist with local ROM management. It is not officially affiliated with, endorsed by, or connected to ES-DE, ScreenScraper, RetroAchievements, or any other third-party provider mentioned. All trademarks, service marks, and logos belong to their respective owners. RomVault operates strictly as a read-only companion tool and does not interfere with the native functionality, services, or servers of third-party platforms.
+This project does not provide, host, distribute, promote, or encourage the sharing of ROMs, BIOS files, or any other copyrighted material. Users are strictly responsible for complying with local copyright laws and ensuring they only manage lawfully backed-up data.*
 
 ---
 
