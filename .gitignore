@@ -8,6 +8,9 @@ romvault.cfg
 # Vecchi backup e versioni storiche
 .romvault.old/
 
+# File di documentazione locale
+RomVault.txt
+
 # Database locali e log
 *.db
 *.db.*
