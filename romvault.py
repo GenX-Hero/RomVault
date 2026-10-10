@@ -24,8 +24,19 @@ import hashlib
 import zlib
 
 # THIRD-PARTY IMPORTS
-import gspread
-import py7zr
+try:
+    import gspread
+    GSPREAD_AVAILABLE = True
+except ImportError:
+    GSPREAD_AVAILABLE = False
+
+try:
+    import py7zr
+except ImportError:
+    print("\n[!] CRITICAL ERROR: The mandatory 'py7zr' library is missing.")
+    print("Please install it before running RomVault by executing:")
+    print("    pip install py7zr\n")
+    sys.exit(1)
 
 
 # GLOBAL VARIABLES - DON'T TOUCH UNLESS YOU KNOW WHAT TO DO
