@@ -11,3 +11,18 @@
 [![WSL Compatible](https://img.shields.io/badge/WSL-ready-orange.svg)]()
 
 </div>
+
+---
+
+## 📖 Overview
+
+**RomVault** is a modular command-line tool designed for retro-gaming enthusiasts and collectors who prefer efficient, scriptable, and lightweight workflows. 
+
+### Key Highlights
+- **ES-DE Companion:** RomVault is built as a natural companion tool for the [ES-DE](https://es-de.org/) (EmulationStation Desktop Edition) retro-gaming frontend, tailored specifically to fit streamlined collection management workflows.
+- **Efficient Organization:** It helps parse, sort, and maintain structured lists and inventories of your local ROM collections with precision.
+
+### Legal Disclaimer
+*RomVault is an independent management utility. This project does not provide, host, distribute, promote, or encourage the sharing of ROMs, BIOS files, or any other copyrighted material. Users are strictly responsible for complying with local copyright laws and ensuring they only manage lawfully backed-up data.*
+
+---
