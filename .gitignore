@@ -10,6 +10,7 @@ romvault.cfg
 
 # File di documentazione locale
 RomVault.txt
+RomVault.TODO
 
 # Database locali e log
 *.db

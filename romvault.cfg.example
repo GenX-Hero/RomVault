@@ -1,8 +1,8 @@
 {
-    "VAR_ROMS_DIR"      : "/mnt/d/ES-DE/ROMs/",
-    "VAR_GAMELIST_DIR"  : "/mnt/d/ES-DE/ES-DE/gamelists/",
-    "VAR_INCOMING_DIR"  : "/mnt/d/romvault/incoming/",
-    "VAR_REPORT_DIR"    : "/mnt/d/romvault/reports/",
+    "VAR_ROMS_DIR"      : "/your/ES-DE/ROMs/folder/",
+    "VAR_GAMELIST_DIR"  : "/your/ES-DE/ES-DE/gamelists/folder/",
+    "VAR_INCOMING_DIR"  : "/your/romvault/Staging/folder",
+    "VAR_REPORT_DIR"    : "/your/romvault/log/reports/folder/",
     "VAR_GSHEET_EXPORT" : "false",
     "VAR_GSHEET_NAME"   : "your google sheet filename",
     "LANGUAGE"          : "en"
