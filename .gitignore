@@ -1,0 +1,14 @@
+# Credenziali e chiavi private
+romvault.sec
+romvault.rak
+
+# File di configurazione live
+romvault.cfg
+
+# Vecchi backup e versioni storiche
+.romvault.old/
+
+# Database locali e log
+*.db
+*.db.*
+*.log

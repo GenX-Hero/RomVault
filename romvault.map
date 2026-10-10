@@ -1,0 +1,66 @@
+[
+    {
+        "db_column": "filename",
+        "xml_tag": "path",
+        "type": "string",
+        "rules": [
+            {"action": "replace", "target": "./", "with": ""}
+        ]
+    },
+    {
+        "db_column": "name",
+        "xml_tag": "name",
+        "type": "string",
+        "rules": [
+            {"action": "replace", "target": " - ( Y )", "with": ""},
+            {"action": "replace", "target": " - ( W )", "with": ""},
+            {"action": "strip"}
+        ]
+    },
+    {
+        "db_column": "hasachi",
+        "xml_tag": "name",
+        "type": "integer",
+        "rules": [
+            {
+                "action": "map_flags",
+                "mappings": [
+                    {"target": " - ( Y )", "value": 1},
+                    {"target": " - ( W )", "value": 2}
+                ],
+                "default": 0
+            }
+        ]
+    },
+    {
+        "db_column": "nummedia",
+        "xml_tag": "path",
+        "type": "integer",
+        "rules": [
+            {"action": "count_multidisc"}
+        ]
+    },
+    {
+        "db_column": "genre", "xml_tag": "genre", "type": "string"
+    },
+    {
+        "db_column": "hidden", "xml_tag": "hidden", "type": "boolean"
+    },
+    {
+        "db_column": "broken", "xml_tag": "broken", "type": "boolean"
+    },
+    {
+        "db_column": "completed", "xml_tag": "completed", "type": "boolean"
+    },
+    {
+        "db_column": "releasedate",
+        "xml_tag": "releasedate",
+        "type": "string",
+        "rules": [
+            {"action": "format_YYYYMMDD"}
+        ]
+    },
+    {
+        "db_column": "publisher", "xml_tag": "publisher", "type": "string"
+    }
+]
