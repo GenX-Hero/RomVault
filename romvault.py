@@ -2,8 +2,8 @@
 """
 RomVault - Management and audit tool for ROMs in ES-DE.
 
-pip install gspread is optional for this application to run
-pip install py7zr is mandatory for this application to run
+pip install gspread is optional for this application to run.
+pip install py7zr is mandatory for this application to run.
 """
 
 # STANDARD LIBRARY IMPORTS
