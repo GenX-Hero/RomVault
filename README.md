@@ -33,3 +33,48 @@
 - **Decoupled Configuration & Customization:** Cleanly separated architecture where configuration parameters and text strings are isolated into modular external files, keeping the core codebase untouched and user-customization straightforward.
 - **Cross-Platform Compatibility:** Designed to run seamlessly on any system supporting Python, optimized for Linux and WSL environments where Windows-based retro-gaming paths can be accessed natively.
 - **Multilingual Support:** Shipped natively with Italian and English localizations out of the box, with a flexible translation system that allows the community to easily expand or add new language maps.
+
+---
+
+## 🛠️ Project Structure
+
+```text
+RomVault/
+├───────── Application files
+├── romvault.py          # Core application script
+├── romvault.art         # ASCII banner and logo resources
+├── romvault.map         # Mapping and indexing definitions
+├───────── Customizable files
+├── romvault.lng         # Localization and string maps
+├── romvault.cfg.example # Configuration template file
+├───────── Optional files
+└── romvault.sec         # Google Cloud's Integration API Key (details in the Wiki)
+```
+
+---
+
+## 🚀 Getting Started
+
+### 1. Clone the Repository
+```bash
+git clone https://github.com/GenX-Hero/RomVault.git
+cd RomVault
+```
+
+### 2. Configure the Environment
+Copy the example configuration file and customize your local paths and settings:
+```bash
+cp romvault.cfg.example romvault.cfg
+nano romvault.cfg
+```
+
+### 3. Run the Application
+```bash
+python3 romvault.py
+```
+
+---
+
+## 📄 License
+
+This project is licensed under the terms of the **GPL-3.0 License**. See the [LICENSE](LICENSE) file for details.
