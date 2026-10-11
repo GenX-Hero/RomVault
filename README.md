@@ -62,14 +62,22 @@ git clone https://github.com/GenX-Hero/RomVault.git
 cd RomVault
 ```
 
-### 2. Configure the Environment
+### 2. Setup Python Environment & install libraries (gspread is optional, read Wiki for details)
+```bash
+python3 -m venv venv
+source venv/bin/activate
+pip install py7zr
+pip install gspread
+```
+
+### 3. Configure the Environment
 Copy the example configuration file and customize your local paths and settings:
 ```bash
 cp romvault.cfg.example romvault.cfg
 nano romvault.cfg
 ```
 
-### 3. Run the Application
+### 4. Run the Application
 ```bash
 python3 romvault.py
 ```
