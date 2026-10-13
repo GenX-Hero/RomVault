@@ -14,7 +14,7 @@
             "err_empty_zip": "Archivio ZIP vuoto",
             "err_xml_not_allowed": "L'archivio contiene file XML non validi",
             "err_unexpected_ext": "Estensione interna '{ext}' non attesa per {system}",
-            "err_bad_zip": "File ZIP corrotto",
+            "err_bad_zip": "File ZIP corrotto.",
             "err_read_zip": "Errore lettura ZIP: {error}",
             "err_empty_7z": "Archivio 7z vuoto",
             "err_extract_7z": "Impossibile estrarre il file principale dal 7z",
