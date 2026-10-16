@@ -155,6 +155,7 @@ try:
         VAR_GAMELIST_DIR = config_data.get("VAR_GAMELIST_DIR", "")
         VAR_INCOMING_DIR = config_data.get("VAR_INCOMING_DIR", "")
         VAR_REPORT_DIR = config_data.get("VAR_REPORT_DIR", "")
+        VAR_HIDDEN_MULTI = config_data.get("VAR_HIDDEN_MULTI", ".multidisc")
         VAR_GSHEET_EXPORT = config_data.get("VAR_GSHEET_EXPORT", "")
         VAR_GSHEET_NAME = config_data.get("VAR_GSHEET_NAME", "")
         CURRENT_LANG = config_data.get("LANGUAGE", "it").lower()
@@ -1311,7 +1312,7 @@ def oper_incr_db_population(menuitem=21):
                                         str_base_name = os.path.splitext(val_value)[0]
                                         str_md_path = os.path.join(
                                             VAR_ROMS_DIR, str_system_folder, 
-                                            '.multidisco', str_base_name,
+                                            VAR_HIDDEN_MULTI, str_base_name,
                                         )
                                         if (
                                             os.path.exists(str_md_path)
@@ -1750,10 +1751,15 @@ def oper_crosscheck_fs_xml():
                         pass
                 case _:
                     for str_root, lst_dirs, lst_files in os.walk(str_system_path):
-                        if '.multidisco' in str_root:
+                        if VAR_HIDDEN_MULTI in str_root:
                             continue
                         for str_file in lst_files:
-                            if str_file.lower() == 'systeminfo.txt':
+                            str_file_low = str_file.lower()
+                            # Ignore system files and support files (.sbi)
+                            if (
+                                str_file_low == 'systeminfo.txt'
+                                or str_file_low.endswith('.sbi')
+                            ):
                                 continue
                             set_fs_files.add(str_file)
 

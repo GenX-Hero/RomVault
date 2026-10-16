@@ -3,6 +3,7 @@
     "VAR_GAMELIST_DIR"  : "/your/ES-DE/ES-DE/gamelists/folder/",
     "VAR_INCOMING_DIR"  : "/your/romvault/Staging/folder",
     "VAR_REPORT_DIR"    : "/your/romvault/log/reports/folder/",
+	"VAR_HIDDEN_MULTI"  : ".multidisc",
     "VAR_GSHEET_EXPORT" : "false",
     "VAR_GSHEET_NAME"   : "your google sheet filename",
     "LANGUAGE"          : "en"
